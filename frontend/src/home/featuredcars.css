@@ -1,0 +1,38 @@
+.image-container .overlay {
+	position: absolute;
+	
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.image-container:hover .overlay {
+	height: 100%;
+}
+
+.image-container .text {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border-radius: 25px;
+}
+
+.image-container img:hover {
+	transform: scale(1.1);
+	transition: transform .2s;
+}
+.size2{
+	width: 500px;
+}
+.csss{
+	border-radius: 25px;
+}

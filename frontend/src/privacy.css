@@ -1,0 +1,13 @@
+li{
+	color: lightblue;
+}
+
+p{
+	color: wheat;
+}
+
+.heading{
+	color: red;
+	text-align: center;
+	box-shadow:0px 2px 0px  rgba(256, 256, 256, 0.2 ); 
+}

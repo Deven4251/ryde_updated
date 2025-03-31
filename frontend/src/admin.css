@@ -1,0 +1,22 @@
+
+.section1 {
+	display: flex;
+	margin: 55px;
+	padding-left: 55px;
+	border-color: black;
+}
+
+.sec1 {
+	margin-top: 8%;
+	padding-bottom: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 6.5%;
+}
+
+
+.anchr {
+	text-decoration: none;
+	text-align: center;
+	padding: 65px;
+}
