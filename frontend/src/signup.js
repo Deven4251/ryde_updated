@@ -9,8 +9,8 @@ import { toast } from 'react-toastify';
 import Header from './signupheaders/header';
 const Signup = () => {
 	const [frm, setfrm] = useState({ "name": "", "phonenumber": "", "email": "", "psw": "" });
-	const [data, setdata] = useState("");
-	const [formData, setformdata] = useState("");
+	// const [data, setdata] = useState("");
+	// const [formData, setformdata] = useState("");
 	const initialText = 'Create account';
 	const [buttonText, setButtonText] = useState(initialText);
 
