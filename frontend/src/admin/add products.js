@@ -116,7 +116,7 @@ const Addproducts = () => {
 						getdata.map((e) => {
 							return (
 								<tr>
-									<td><img src={"http://localhost:8000/uploades/" + e.carimage} style={{ width: "130px", height: "80px" }} /></td>
+									<td><img src={"http://localhost:8000/uploades/" + e.carimage} style={{ width: "130px", height: "80px" }} alt="could not load the backend "/></td>
 									<td>{e.carname}</td>
 									<td>{e.ownername}</td>
 									<td>{e.carnumber}</td>

@@ -30,9 +30,9 @@ const AdminFooter = () => {
 		<footer className="admin-footer">
 			<p>&copy; 2024 Admin Panel. All rights reserved.</p>
 			<ul>
-				<li><a href="#">Terms of Service</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="../tos">Terms of Service</a></li>
+				<li><a href="../privacy">Privacy Policy</a></li>
+				<li><a href="../contact">Contact Us</a></li>
 			</ul>
 		</footer>
 	);

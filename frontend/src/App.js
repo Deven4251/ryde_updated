@@ -5,7 +5,7 @@ import BarLoader from "react-spinners/ClipLoader";
 
 const App = () => {
 	const [loading, setloading] = useState(false);
-	let [color, setColor] = useState("#fff000");
+	let [color] = useState("#fff000");
 	useEffect(() => {
 		setloading(true)
 		setTimeout(() => {

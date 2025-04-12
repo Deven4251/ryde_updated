@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Header, { Footer } from "./headerfooter";
 import React, { useState, useEffect } from "react";
 import "./cars.css";
@@ -28,6 +29,7 @@ const Car = () => {
 		});
 		const res = await re.json();
 		loadrecord();
+		console.log(res);
 	};
 
 	useEffect(() => {
@@ -189,7 +191,7 @@ const CarInfo = ({ car }) => {
 		const Data = await re.json();
 		toast.success(Data.msg);
 	};
-
+	// eslint-disable-next-line no-unused-vars
 	const loadscript = (src) => {
 		return new Promise((resolve) => {
 			const script = document.createElement("script");
@@ -199,7 +201,7 @@ const CarInfo = ({ car }) => {
 			};
 		});
 	};
-	const [amount, setAmount] = useState("");
+	const [amount, setamount] = useState("");
 	const showrazorpay = async (e) => {
 		try {
 			const res = await axios.post("checkout", { amount: amount });
@@ -219,8 +221,8 @@ const CarInfo = ({ car }) => {
 				},
 
 				prefill: {
-					name: "devendra",
-					contact: "7398043147",
+					name: "Devendra",
+					contact: "739XXXXX47",
 				},
 				//if(response.razorpay_payment_id)
 				//{
