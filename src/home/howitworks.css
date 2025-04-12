@@ -1,0 +1,53 @@
+.how-it-works {
+	padding: 5rem 0;
+}
+
+.how-it-works h2 {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.steps {
+	display: flex;
+	justify-content: space-between;
+}
+
+.step {
+	background-color: #c0c0c0;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	flex: 1 0 300px;
+	margin: 1rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.step-image {
+	width: 100%;
+	height: auto;
+}
+
+.step-content {
+	padding: 1.5rem;
+	color: tomato;
+}
+
+.step-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: black;
+	font-weight: BOLDER;
+}
+
+.step-description {
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-weight: bold;
+	color: blue;
+}
+
+.step:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+}

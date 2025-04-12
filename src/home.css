@@ -1,0 +1,27 @@
+.labelDate {
+	color: red;
+	font-weight: bolder;
+	border-radius: 25 px;
+	/*animation: labeldate 3s 1s infinite;*/
+}
+
+
+.labelTime {
+	font-size: small;
+}
+.background{
+	background-image: url("https://www.pinterest.com");
+}
+.card2{
+	background-color: transparent;
+}
+
+.size{
+	width: 300px;
+	color: black;
+	background-color: red;
+}
+.city{
+	width: 300px;
+	background-color: burlywood;
+}

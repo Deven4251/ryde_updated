@@ -1,0 +1,126 @@
+
+.pic1 {
+	width: 400px;
+	height: 150px;
+	border-radius: 65px;
+}
+
+.p1 {
+	text-decoration: none;
+}
+
+.a1 {
+	text-decoration: none;
+	color: wheat;
+}
+
+.a1:hover {
+	color: greenyellow;
+}
+
+.c1 {
+	background-color: cadetblue;
+}
+
+
+
+.b1 {
+	background-color: #333;
+}
+
+.btn1:hover {
+	background-color: chartreuse;
+}
+
+.sp1 {
+	background-color: #333;
+}
+
+.div1 {
+	background-image: url("1.avif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	padding: 10px;
+
+}
+
+.div2 {
+	height: 200px;
+}
+
+.inp1 {
+	font-family: "Algerian", Gadget, sans-serif;
+	font-size: large;
+	width: 100%;
+}
+
+.text1 {
+	font-family: "Algerian", Gadget, sans-serif;
+	font-weight: bold;
+	font-size: large;
+	color: black;
+}
+
+.text1:hover {
+	cursor: no-drop;
+	color: brown;
+}
+
+.table1 {
+	border-color: blue;
+	border-left-color: red;
+	border-width: 10px;
+	border-block-end-width: thick;
+}
+
+.card1 {
+	width: 20rem;
+	height: 25rem;
+}
+
+.card1:hover {
+	background: linear-gradient(45deg, pink, yellow);
+}
+
+.logo {
+	padding: 0px;
+	border-radius: 75px;
+	width: 100px;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.card {
+	width: 250px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	margin: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-image {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+	padding: 15px;
+}
+
+.card-content {
+	position: relative;
+}

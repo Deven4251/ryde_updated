@@ -1,0 +1,40 @@
+.bookings {
+	width: max-content;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.rejection {
+	width: min-content;
+	border-radius: 10px;
+	background-color: red;
+}
+
+.rejection:hover {
+	background-color: red;
+}
+
+.addcar {
+	width: max-content;
+}
+
+.btnsize {
+	width: 100px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	padding: 10px;
+	background-color: blueviolet;
+	text-align: center;
+}
+
+.btnsize:hover {
+	background-color: blueviolet;
+}
+
+.bttn {
+	width: 200px;
+}
+
+input {
+	border: none;
+}
