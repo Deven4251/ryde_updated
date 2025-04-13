@@ -5,15 +5,15 @@ import { toast } from 'react-toastify';
 import { ToastContainer } from "react-toastify";
 const OrderTrack=()=> {
 	const [orders, setorders] = useState([]);
-	
+
 	useEffect(() => {
-		loadrecord();	
+		loadrecord();
 	}, []);
-	
+
 const deleteorder = async (x) => {
-	
+
 		if (window.confirm("IS ORDER FULLFILLED")) {
-			const re = await fetch("http://127.0.0.1:8000/delete_order", {
+			const re = await fetch("https://rydebackend.onrender.com/delete_order", {
 				method: 'DELETE',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({id: x })
@@ -25,7 +25,7 @@ const deleteorder = async (x) => {
 	}
 
 	const loadrecord = async () => {
-		const re = await fetch("http://127.0.0.1:8000/admin_orders", {
+		const re = await fetch("https://rydebackend.onrender.com/admin_orders", {
 			method: 'GET',
 			headers: { 'Content-Type': 'application/json' },
 		});
@@ -69,7 +69,7 @@ const deleteorder = async (x) => {
 							<td>
 								<button type="button" className='buttn'onClick={()=>{deleteorder(event._id)}}>fulfilled</button>
 								<ToastContainer/>
-								
+
 
 							</td>
 							</tr>
@@ -80,7 +80,7 @@ const deleteorder = async (x) => {
 			</table>
 			<AdminFooter/>
 		</div>
-		
+
 	);
 }
 

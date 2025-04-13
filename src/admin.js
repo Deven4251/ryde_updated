@@ -12,7 +12,7 @@ const Admin = () => {
 		setfrm({ ...frm, [e.target.id]: e.target.value });
 	}
 	const admin = async () => {
-		const rec = await fetch("http://localhost:8000/adminlogin", {
+		const rec = await fetch("https://rydebackend.onrender.com/adminlogin", {
 			method: 'POST',
 			headers: { "Content-Type": 'application/json' },
 			body: JSON.stringify({ uname: frm.txtuname, psw: frm.txtpsw }),

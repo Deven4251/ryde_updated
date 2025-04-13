@@ -11,7 +11,7 @@ const Login = () => {
         setfrm({...frm,[e.target.id]:e.target.value});
     }
 	const login=async()=>{
-		const rec=await fetch("http://localhost:8000/loginuser",{
+		const rec=await fetch("https://rydebackend.onrender.com/loginuser",{
             method:'POST',
 			headers:{"Content-type":"application/json"},
             body:JSON.stringify({email:frm.txtemail,psw:frm.txtpassword})
@@ -19,7 +19,7 @@ const Login = () => {
         const data=await rec.json();
         if(data.msg==="Valid Login"){
             jump("/cars")
-			
+
         }
         else{
             alert(data.msg);

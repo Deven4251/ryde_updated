@@ -22,7 +22,7 @@ const Signup = () => {
 		setTimeout(() => {
 			setButtonText(initialText);
 		}, 2000);
-		const rec = await fetch("http://localhost:8000/signup", {
+		const rec = await fetch("https://rydebackend.onrender.com/signup", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(frm),

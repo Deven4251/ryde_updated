@@ -13,7 +13,7 @@ const Car = () => {
 	const [selectedCar, setSelectedCar] = useState({});
 
 	const loadrecord = async () => {
-		const re = await fetch("http://127.0.0.1:8000/getcar", {
+		const re = await fetch("https://rydebackend.onrender.com/getcar", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" },
 		});
@@ -22,7 +22,7 @@ const Car = () => {
 	};
 
 	const getrecord = async () => {
-		const re = await fetch("http://127.0.0.1:8000/getcar", {
+		const re = await fetch("https://rydebackend.onrender.com/getcar", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" },
 		});
@@ -49,7 +49,7 @@ const Car = () => {
 							<div className="row align-items-center">
 								<div className="col-md-4">
 									<img
-										src={"http://localhost:8000/uploades/" + e.carimage}
+										src={"https://rydebackend.onrender.com/uploades/" + e.carimage}
 										className="image"
 										alt={e.carname}
 									/>
@@ -171,7 +171,7 @@ const CarInfo = ({ car }) => {
 		setfrm({ ...frm, [event.target.id]: event.target.value });
 	};
 	const bookcar = async () => {
-		const re = await fetch("http://127.0.0.1:8000/order", {
+		const re = await fetch("https://rydebackend.onrender.com/order", {
 			method: "POST",
 			body: JSON.stringify({
 				customerName: frm.customerName,
@@ -240,7 +240,7 @@ const CarInfo = ({ car }) => {
 			amount: "50",
 		};
 		const order = await axios.post(
-			"http://localhost:8000/create-razorpay-order",
+			"https://rydebackend.onrender.com/create-razorpay-order",
 			userData
 		);
 		console.log(order);
@@ -263,7 +263,7 @@ const CarInfo = ({ car }) => {
 					razorpay_signature: response.razorpay_signature,
 				};
 				const orderResult = await axios.post(
-					"http://localhost:8000/verify-signature",
+					"https://rydebackend.onrender.com/verify-signature",
 					userData
 				);
 				if (orderResult.data.success) {
@@ -294,7 +294,7 @@ const CarInfo = ({ car }) => {
 			<div className="col-md-6">
 				<p>
 					<img
-						src={"http://localhost:8000/uploades/" + car.carimage}
+						src={"https://rydebackend.onrender.com/uploades/" + car.carimage}
 						style={{ width: "350px", height: "300px" }}
 						alt={car.carname}
 					/>

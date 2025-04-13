@@ -25,7 +25,7 @@ const Addproducts = () => {
 	}
 
 	const updaterecord = async () => {
-		const re = await fetch("http://127.0.0.1:8000/updatecar", {
+		const re = await fetch("https://rydebackend.onrender.com/updatecar", {
 			method: 'PUT',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ id: edtid, carname: edtcarname, rentprice: edtrentprice, carnumber: edtcarnumber })
@@ -37,7 +37,7 @@ const Addproducts = () => {
 
 	const deleterecord = async (x) => {
 		if (window.confirm("Want to delete")) {
-			const re = await fetch("http://127.0.0.1:8000/deletecar", {
+			const re = await fetch("https://rydebackend.onrender.com/deletecar", {
 				method: 'DELETE',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({ id: x })
@@ -59,7 +59,7 @@ const Addproducts = () => {
 		fdata.append("sit_no", frm.sit_no);
 		fdata.append("carimage", fileData);
 
-		const re = await fetch("http://127.0.0.1:8000/addcar", {
+		const re = await fetch("https://rydebackend.onrender.com/addcar", {
 			method: 'POST',
 			body: fdata
 		});
@@ -69,7 +69,7 @@ const Addproducts = () => {
 	}
 
 	const editRecord = async (x) => {
-		const re = await fetch("http://127.0.0.1:8000/getcar", {
+		const re = await fetch("https://rydebackend.onrender.com/getcar", {
 			method: 'PATCH',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ id: x })
@@ -82,7 +82,7 @@ const Addproducts = () => {
 	}
 
 	const loadrecord = async () => {
-		const re = await fetch("http://127.0.0.1:8000/getcar", {
+		const re = await fetch("https://rydebackend.onrender.com/getcar", {
 			method: 'GET',
 			headers: { 'Content-Type': 'application/json' },
 		});
@@ -116,7 +116,7 @@ const Addproducts = () => {
 						getdata.map((e) => {
 							return (
 								<tr>
-									<td><img src={"http://localhost:8000/uploades/" + e.carimage} style={{ width: "130px", height: "80px" }} /></td>
+									<td><img src={"https://rydebackend.onrender.com/uploades/" + e.carimage} style={{ width: "130px", height: "80px" }} /></td>
 									<td>{e.carname}</td>
 									<td>{e.ownername}</td>
 									<td>{e.carnumber}</td>

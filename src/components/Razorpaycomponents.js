@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useEffect} from "react";
 const RazorPayComponent = () => {
 
 	useEffect(() => {
@@ -15,14 +15,14 @@ const RazorPayComponent = () => {
 
 	const openRazorpay = () => {
 		var options = {
-			"key": "rzp_test_RahlVHO9T1FxJC", 
-			"amount": "50000", 
+			"key": "rzp_test_RahlVHO9T1FxJC",
+			"amount": "50000",
 			"currency": "INR",
 			"name": "RyDe",
 			"description": "Test Transaction",
 			"image": "https://example.com/your_logo",
 			"order_id": "order_Nz0y7TyPfcBXBg", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-			"callback_url": "http://localhost:8000/verify-order",
+			"callback_url": "https://rydebackend.onrender.com/verify-order",
 			"prefill": {
 				"name": "RYDE",
 				"email": "dev@gmail.com",
